@@ -38,9 +38,9 @@ public class StepDefinitions {
     }
     @Then("the user  is able to view for a product.")
     public void the_user_is_able_to_view_for_a_product() throws InterruptedException {
-        // Write code here that turns the phrase above into concrete actions
-      //  String text = homePage.getSearchResult().getText();
-      //  Assert.assertEquals(text,"\"mobiles\"");
+        Write code here that turns the phrase above into concrete actions
+       String text = homePage.getSearchResult().getText();
+       Assert.assertEquals(text,"\"mobiles\"");
 
 
     }
