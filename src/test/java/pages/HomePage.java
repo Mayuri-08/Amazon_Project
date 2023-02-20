@@ -22,9 +22,58 @@ public class HomePage {
     @FindBy(xpath = "//input[@type=\"text\"]")
     WebElement searchBox;
 
-    @FindBy(id = "nav-search-submit-button")
+    @FindBy(xpath = "//span[@class=\"a-color-state a-text-bold\"]")
     WebElement searchResult;
 
+    public WebElement getSearchMinPrice() {
+        return searchMinPrice;
+    }
+    public WebElement getSearchMaxPrice() {
+        return searchMaxPrice;
+    }
+    public WebElement getGoButton() {
+        return goButton;
+    }
+
+    @FindBy(xpath = "//input[@placeholder=\"Min\"]")
+    WebElement searchMinPrice;
+
+    @FindBy(xpath = "//input[@placeholder=\"Max\"]")
+    WebElement searchMaxPrice;
+    @FindBy(xpath = "//input[@class=\"a-button-input\"]")
+    WebElement goButton;
+
+    public WebElement getSelectFeature() {
+        return SelectFeature;
+    }
+
+    @FindBy(xpath = "//select[@name=\"s\"]")
+    WebElement SelectFeature;
+
+    public WebElement getViewResult() {
+        return viewResult;
+    }
+    @FindBy(xpath = "//span[@class=\"a-size-medium-plus a-color-base a-text-normal\"]")
+    WebElement viewResult;
+
+    public WebElement getSelectOs() {
+        return selectOs;
+    }
+
+    public WebElement getSelectDisplay() {
+        return selectDisplay;
+    }
+    public WebElement getSelectTech() {
+        return selectTech;
+    }
+    @FindBy(xpath = "//span[text()='Android 12.0']")
+    WebElement selectOs;
+
+    @FindBy(xpath = "//span[text()='AMOLED']")
+    WebElement selectDisplay;
+
+    @FindBy(xpath = "//span[text()='5G']")
+    WebElement selectTech;
 
 
 }
