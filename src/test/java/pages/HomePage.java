@@ -75,5 +75,12 @@ public class HomePage {
     @FindBy(xpath = "//span[text()='5G']")
     WebElement selectTech;
 
+    public WebElement getSearchItem() {
+        return searchItem;
+    }
+
+    @FindBy(xpath ="//span[@class=\"a-color-state a-text-bold\"]")
+    WebElement searchItem;
+
 
 }

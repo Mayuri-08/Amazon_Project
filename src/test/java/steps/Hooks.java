@@ -20,7 +20,7 @@ public class Hooks {
 
 
     }
-    @Before
+    @Before(order = 0)
     public void setUp(){
         browserManager.setDriver();
     }
@@ -32,9 +32,8 @@ public class Hooks {
             scenario.attach(src, "image/png", "screenshot");
         }
     }
-   // @After
-   // public void tearDown(){
-     //   browserManager.getDriver().quit();
+  // @After
+   // public void tearDown(){browserManager.getDriver().quit();
 
    // }
 }
