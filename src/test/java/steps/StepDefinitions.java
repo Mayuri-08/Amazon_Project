@@ -90,17 +90,22 @@ public class StepDefinitions {
     @When("user searches for {string}")
     public void userSearchesFor(String arg0) {
         homePage.getSearchBox().sendKeys(arg0);
-        homePage.getSearchBox().click();
+        homePage.getSearchBox().sendKeys(Keys.ENTER);
     }
+    @And("user selects the  {string}")
+    public void userSelectsThe(String arg0) {
+        homePage.getSearchBox().sendKeys(arg0);
+        homePage.getSearchBox().sendKeys(Keys.ENTER);
 
-    @And("user selects the  brand")
-    public void userSelectsTheBrand() {
-
-        
     }
-
     @Then("the item should be applied")
     public void theItemShouldBeApplied() {
+       // String attribute = homePage.getSearchItem().getText();
+      //  Assert.assertEquals(text,"\"t-shirt adidas\"");
+      //  Assert.assertEquals(text,"\"t-shirt adidas\"");
+
 
     }
+
+
 }

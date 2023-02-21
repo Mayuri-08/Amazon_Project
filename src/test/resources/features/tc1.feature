@@ -33,14 +33,14 @@ Feature: Amazon Customization
   Scenario Outline: Customize product on Amazon
     Given the user navigates to home page
     When user searches for "<product>"
-    And user selects the  brand
+    And user selects the  "<brand>"
     Then the item should be applied
 
-    Examples:
-      | product     |
-      | T-shirt     |
-      | Earphones   |
 
+    Examples:
+      | product     | brand  |
+      | T-shirt     | Adidas |
+      | Earphones   | Boat   |
 
 
 
