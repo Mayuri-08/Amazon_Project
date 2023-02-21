@@ -29,7 +29,7 @@ Feature: Amazon Customization
         And the user selects display type
         And the user selects cellular technology
         Then the user is able to view for a product
-@smoke
+
   Scenario Outline: Customize product on Amazon
     Given the user navigates to home page
     When user searches for "<product>"
