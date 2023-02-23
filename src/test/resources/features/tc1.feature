@@ -42,7 +42,7 @@ Feature: Amazon Customization
       | Earphones   | Boat   | earphones boat |
 
 
-  @smoke
+
     Scenario: Verify that the user is able to see the new releases for books section.
       When the user navigates to all section
       Then the user clicks on the books section
