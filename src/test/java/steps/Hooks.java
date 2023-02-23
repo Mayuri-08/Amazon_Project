@@ -32,7 +32,7 @@ public class Hooks {
             scenario.attach(src, "image/png", "screenshot");
         }
     }
- //  @After(order = 0)
+    // @After(order = 0)
  //  public void tearDown(){browserManager.getDriver().quit();
 
  //  }
